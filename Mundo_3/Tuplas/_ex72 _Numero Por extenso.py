@@ -2,7 +2,7 @@ tupla = ('zero', 'um', 'dois', 'três', 'quatro', 'cinco', 'seis', 'sete', 'oito
 while True:
     while True:
         numero_digitado = int(input('Digite um número entre [0 à 20]: '))
-        if (numero_digitado >=0 and numero_digitado <= 20):
+        if (numero_digitado >= 0) and (numero_digitado <= 20):
             break
         print('Faça novamente. ', end='')
     print('\033[1;33m-=-=\033[m' * 10)

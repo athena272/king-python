@@ -4,3 +4,4 @@ print(''' --------------
 Muito prazer em te conhecer "{}"!
 seu primeiro nome é: {}
 seu último nome é: {}'''.format(name,name_dividio[0], name_dividio[len(name_dividio)-1]))
+print(name_dividio)
