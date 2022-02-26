@@ -13,6 +13,7 @@ elif(energiaConsumida >= 575):
     precoKWh = 2.15
     energiaConsumida = energiaConsumida + (energiaConsumida * 0.1)#taxa de 10%, pois o consumo esta acima de 300
     
+    
 contaLuz = (energiaConsumida * precoKWh)
 
 print('%.2f' %contaLuz)
