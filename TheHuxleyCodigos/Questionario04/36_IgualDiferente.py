@@ -11,3 +11,4 @@ elif(valor1 != valor2 != valor3):
     qtdIguais = 2
 
 print(qtdIguais)
+

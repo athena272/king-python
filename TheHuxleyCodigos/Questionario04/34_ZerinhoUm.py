@@ -16,3 +16,4 @@ elif(claraGanha):
     vencedor = 'C'
     
 print(vencedor)
+
