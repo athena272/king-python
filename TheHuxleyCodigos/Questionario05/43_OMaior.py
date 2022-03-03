@@ -11,6 +11,8 @@ valor1 = int(listaValores[0])
 valor2 = int(listaValores[1])
 valor3 = int(listaValores[2])
 
-maisMaior = maiorAB((maiorAB(valor1, valor2)), valor3)
+entreValor1_2 = maiorAB(valor1, valor2)
 
-print(maisMaior,'eh o maior')
+oMaior = maiorAB(entreValor1_2, valor3)
+
+print(oMaior,'eh o maior')
