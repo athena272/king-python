@@ -18,12 +18,12 @@ tempoCarro3 = float(input())
 
 converterConst = 3.6
  
-carro1Final = velkmh(velocidadeCarro1, aceleraocaoCarro1, tempoCarro1) * converterConst #converter em m/s
+carro1Final = velkmh(velocidadeCarro1, aceleraocaoCarro1, tempoCarro1) 
 
-carro2Final = velkmh(velocidadeCarro2, aceleracaoCarro2, tempoCarro2) * converterConst #converter em m/s
+carro2Final = velkmh(velocidadeCarro2, aceleracaoCarro2, tempoCarro2) 
 
-carro3Final = velkmh(velocidadeCarro3, aceleracaoCarro3, tempoCarro3) *converterConst #converter em m/s
+carro3Final = velkmh(velocidadeCarro3, aceleracaoCarro3, tempoCarro3) 
 
-menorVelocidade = min(carro1Final, carro2Final, carro3Final)
+menorVelocidade = min(carro1Final, carro2Final, carro3Final) * converterConst #converter em m/s
 
 print('%.1f' %menorVelocidade)
