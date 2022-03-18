@@ -1,2 +1,2 @@
 # King_Python-GitHub
- Exercícios Python do Curso em Vídeo, professor Gustavo Guanabara
+ Exercícios Python da Faculdade e Curso em Video
