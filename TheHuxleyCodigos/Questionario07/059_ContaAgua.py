@@ -12,7 +12,7 @@ elif(contaMetros >= 31 and contaMetros <= 100):
     totalPagar += (2 * faixaConsumo31_100)
 
 elif(contaMetros > 100):
-    totalPagar += 140 + 20 #70 vezes dois reais, 140 numeros entre 31 ate 100, mais 20 de 11 ate 30
+    totalPagar += 140 + 20 #70 vezes dois reais, 140 numeros entre 31 ate 100, mais 20 numeros de 11 ate 30
     totalPagar += (5 * faixaConsumoMaior100) 
 
 print(totalPagar)
