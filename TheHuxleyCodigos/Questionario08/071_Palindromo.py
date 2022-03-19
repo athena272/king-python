@@ -1,5 +1,6 @@
 def serPalindromo(palavra):
     status = False
+    palavra = palavra.replace(' ','') #deixar sem espacos
     palavraInverso = palavra[::-1]
     if(palavra == palavraInverso):
         status = True
