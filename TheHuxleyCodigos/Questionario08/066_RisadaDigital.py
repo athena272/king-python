@@ -27,11 +27,13 @@ def risadaInvalida(textoRisada):
 
 def risadaEngracada(textoRisada):
     status = False
-    textoEngracado = ('hahaha' in textoRisada or 'huaauhahhuahau' in textoRisada)
+    textoEngracado1 = ('hahaha' in textoRisada or 'ahahah' in textoRisada)
+    textoEngracado2 = ('huaauhahhuahau' in textoRisada or 'uahauhhahuaauh' in textoRisada)
+    doisTextosEngracados = (textoEngracado1 and textoEngracado2)
     textoSemGraca = ('riajkjdhhihhjak' in textoRisada or 'huehuehue' in textoRisada)
     terSoVogal = soVogal(textoRisada)
-    
-    if((textoEngracado or terSoVogal) and not(textoSemGraca)):
+
+    if((textoEngracado1 or textoEngracado2 or terSoVogal) and not(textoSemGraca)) and not(doisTextosEngracados):
         status = True #Sem graca
     
     return status
