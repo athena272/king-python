@@ -1,40 +1,35 @@
-def soVogal(textoRisada):
-    status = True
-    letraAnterior = textoRisada[0]
-    for letra in textoRisada:
-        if(letra not in 'aeiou' or letraAnterior != letra):
-            status = False
-            break
-        letraAnterior = letra    
-    return status
+def retirarConsoantes(msg):
+    palavraSemVogais = ''
+    for letra in msg:
+        if(letra in 'aeiou'):
+            palavraSemVogais += letra
+    
+    return palavraSemVogais
 
-def soConsoante(textoRisada):
+
+def soConsoante(msg):
     status = True
-    for letra in textoRisada:
+    for letra in msg:
         if(letra in 'aeiou'):
             status = False
             break
+    
     return status
 
-def risadaInvalida(textoRisada):
+def serPalindromo(palavra):
     status = False
-    maior50Letras = len(textoRisada)
-    if(maior50Letras > 50 or soConsoante(textoRisada)):
+    palavra = palavra.replace(' ','') #deixar sem espacos
+    palavraInverso = palavra[::-1]
+    if(palavra == palavraInverso):
         status = True
     
     return status
 
-
-def risadaEngracada(textoRisada):
+def textoEngracado(msg):
     status = False
-    textoEngracado1 = ('hahaha' in textoRisada or 'ahahah' in textoRisada)
-    textoEngracado2 = ('huaauhahhuahau' in textoRisada or 'uahauhhahuaauh' in textoRisada)
-    doisTextosEngracados = (textoEngracado1 and textoEngracado2)
-    textoSemGraca = ('riajkjdhhihhjak' in textoRisada or 'huehuehue' in textoRisada)
-    terSoVogal = soVogal(textoRisada)
-
-    if((textoEngracado1 or textoEngracado2 or terSoVogal) and not(textoSemGraca)) and not(doisTextosEngracados):
-        status = True #Sem graca
+    vogaisTexto = retirarConsoantes(msg)
+    if(serPalindromo(vogaisTexto)):
+        status = True
     
     return status
 
@@ -44,12 +39,17 @@ qtdLeituras = int(input())
 cont = 0
 while cont < qtdLeituras:
     textoRisada = input().lower()
-    statusRisada = 'SEM GRACA'
-    if(risadaEngracada(textoRisada)):
-        statusRisada = 'ENGRACADA'
-    if(risadaInvalida(textoRisada)):
-        statusRisada = 'INVALIDA'
     
-    print(statusRisada)
+    if(soConsoante(textoRisada) or len(textoRisada) > 50):
+        print('INVALIDA')
+        cont += 1
+        continue
+
+    if(textoEngracado(textoRisada)):
+        print('ENGRACADA')
+    
+    else:
+        print('SEM GRACA')
+
 
     cont += 1
