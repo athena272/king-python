@@ -92,7 +92,7 @@ def dpm(lista):
 # al = pi*raio*larg+2*raio*larg
 # at = al+ pi*raio**2
 
-# print(round(at))
+# print(at)
 
 
 
