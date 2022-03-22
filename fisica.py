@@ -18,17 +18,17 @@ from math import sqrt, ceil, floor
 
 #2
 
-def Mm (lista):
-    soma = 0
-    for index in range(len(lista)):
-        soma = soma + lista[index]
-    return soma/ len(lista)
+# def Mm (lista):
+#     soma = 0
+#     for index in range(len(lista)):
+#         soma = soma + lista[index]
+#     return soma/ len(lista)
 
-def dpm(lista):
-    somatorio = 0
-    for index in range(len(lista)):
-        somatorio = somatorio + (lista[index] - Mm(lista))**2
-    return sqrt( somatorio/ (len(lista)-1)  )
+# def dpm(lista):
+#     somatorio = 0
+#     for index in range(len(lista)):
+#         somatorio = somatorio + (lista[index] - Mm(lista))**2
+#     return sqrt( somatorio/ (len(lista)-1)  )
 
 # Opcao A
 
