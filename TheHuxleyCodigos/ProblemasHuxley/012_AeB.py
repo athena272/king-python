@@ -11,3 +11,5 @@ while True:
 
     if(subtrair == B):
         break;
+    
+    i += 1
