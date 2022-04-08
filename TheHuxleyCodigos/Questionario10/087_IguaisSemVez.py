@@ -1,3 +1,11 @@
+def convertListInt(listaString):
+    listaInt = list()
+    for i in listaString:
+        listaInt.append(int(i))
+
+    return listaInt
+
+
 def removeRepetidos(listaNum):
     listaSemRepetidos = list()
     for elem in listaNum:
@@ -9,6 +17,7 @@ def removeRepetidos(listaNum):
 qtdNumeros = int(input())
 listaNumeros = input().split()
 listaFinal = removeRepetidos(listaNumeros)
+listaFinal = convertListInt(listaFinal)
 
 textoFinal = ''
 listaFinal.sort()
