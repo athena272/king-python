@@ -14,12 +14,12 @@ while True:
     listNome.sort()
     for convidados in listNome:
             print(convidados)
-    imprimirLinhas()
+    
 
     qtdLeituras = int(input())
     if(qtdLeituras == 0):
         break
-
+    imprimirLinhas()    
     cont = 0
     while cont < qtdLeituras:
         
