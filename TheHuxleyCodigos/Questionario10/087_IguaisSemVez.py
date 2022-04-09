@@ -22,7 +22,7 @@ listaFinal = convertListInt(listaFinal)
 textoFinal = ''
 listaFinal.sort()
 for i in listaFinal:
-    textoFinal += i + ' '
+    textoFinal += str(i) + ' '
 
 print(textoFinal)
 
