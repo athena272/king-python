@@ -8,3 +8,6 @@ posAparicoes = [indice for indice, numero in enumerate(listaNumeros) if (numero 
 
 for pos in posAparicoes:
     print(pos)
+
+
+    
