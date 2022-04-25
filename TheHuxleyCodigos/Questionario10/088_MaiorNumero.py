@@ -7,7 +7,6 @@ def convertListInt(listaString):
 
 listaNumeros = input().split()
 listaNumeros = convertListInt(listaNumeros)
-listaNumeros.sort(reverse=True)
+maiorNumero = max(listaNumeros)
 
-maiorNumero = listaNumeros[0]
 print(maiorNumero)
