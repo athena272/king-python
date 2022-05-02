@@ -17,3 +17,5 @@ print('-=' * 30)
 print(f'A lista completa é {full_lista}'
       f'\nA lista com valores pares é {lista_pares}'
       f'\nA lista com valores impares é {lista_impares}')
+
+      
