@@ -12,14 +12,18 @@ def ehPrimo(num, i = 2):
     return ehPrimo(num, i + 1)
 
 listaNumeros = input().split()
+listaNumeros = [int(i) for i in listaNumeros]
+
 qtdNumPrimos = 0
 produtoPrimos = 1
 for num in listaNumeros:
-    if(ehPrimo(int(num))): 
+    if(ehPrimo(num)): 
         qtdNumPrimos += 1
-        produtoPrimos *= int(num)
+        produtoPrimos *= num
 
 if(qtdNumPrimos == 4):
     print(produtoPrimos)
 else:
     print('SEM PRODUTO')
+
+
