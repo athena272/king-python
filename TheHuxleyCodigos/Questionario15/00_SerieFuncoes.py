@@ -35,12 +35,6 @@ def somatoria(num, numerador = 1, denominador = 1):
     somatoriaS = (fat(numerador)/denominador) + somatoria(num, numerador + 1, denominador)
     return somatoriaS
 
-def proximoPrimoString(i, denominador):
-    if(i > denominador):
-        denominador =  proximoPrimo(denominador)
-    
-    return str(denominador)
-
 quantidade = int(input())
 if (quantidade == 0):
     print("0.00")
