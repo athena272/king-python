@@ -7,7 +7,7 @@ def ehPrimo(num, i = 2):
         return False
     if (i * i > num):
         return True
- 
+
     # Check for next divisor
     return ehPrimo(num, i + 1)
 
